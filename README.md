@@ -27,6 +27,7 @@ Complete [today's Kata](https://www.codewars.com/kata/sum-of-odd-cubed-numbers) 
 
 ```
 export PORT=3000
+export CLIENT_URL=http://localhost:8080
 Mac:     export DATABASE_URL=postgres://localhost:5432/books_app
 Windows: export DATABASE_URL=postgres://USER:PASSWORD@localhost:5432/books_app
 ```
@@ -36,13 +37,14 @@ _Your repositories must each include the following config files:_
 - `README.md` - with documentation regarding your lab and it's current state of development. Check the "documentation" section below for more details on how that should look **AT MINIMUM**
 - `.gitignore` - with standard NodeJS configurations
 - `.eslintrc.json` - with Code 301 course standards for the linter
+
 _Your `book-list-server` repository must also include:_
 - `package.json` - with all dependencies and any associated details related to configuration
 
 
 ```sh
 book_app_week_3
-├── public
+├── book-list-client
 │   ├── data
 │   │   └── books.json
 |   ├── .eslintrc.json
@@ -66,12 +68,13 @@ book_app_week_3
 │       ├── layout.css
 │       ├── modules.css
 │       └── reset.css
-├── .eslintrc.json
-├── .gitignore
-├── package-lock.json
-├── package.json
-├── README.md
-└── server.js
+└── book-list-server
+    ├── .eslintrc.json
+    ├── .gitignore
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
+    └── server.js
 ```
 
 ## User Stories & Feature Tasks
